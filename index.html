@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenSCAD Engineer Portfolio</title>
+    <title>Diep Minh Anh Tien | Computational Design & AI Reasoning Portfolio</title>
     <style>
         :root {
             --bg-color: #0d1117;
@@ -36,15 +36,17 @@
         }
 
         header h1 {
-            font-size: 3rem;
+            font-size: 2.8rem;
             color: #ffffff;
             margin-bottom: 10px;
+            letter-spacing: -1px;
         }
 
         header p {
             font-size: 1.2rem;
             color: var(--accent);
             margin-bottom: 20px;
+            font-weight: 300;
         }
 
         .contact-links a {
@@ -55,11 +57,13 @@
             border: 1px solid var(--border);
             border-radius: 5px;
             transition: all 0.3s;
+            font-size: 0.9rem;
         }
 
         .contact-links a:hover {
             border-color: var(--accent);
             color: var(--accent);
+            background-color: rgba(88, 166, 255, 0.1);
         }
 
         .container {
@@ -73,9 +77,9 @@
         }
 
         h2 {
-            font-size: 2rem;
+            font-size: 1.8rem;
             color: #ffffff;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             border-bottom: 2px solid var(--border);
             padding-bottom: 10px;
             display: inline-block;
@@ -92,7 +96,7 @@
             border: 1px solid var(--border);
             padding: 8px 15px;
             border-radius: 20px;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: var(--accent);
         }
 
@@ -100,86 +104,105 @@
             background-color: var(--card-bg);
             border: 1px solid var(--border);
             border-radius: 8px;
-            padding: 25px;
+            padding: 30px;
             margin-bottom: 30px;
-            transition: transform 0.2s;
+            transition: border-color 0.3s;
         }
 
         .project-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--text-muted);
+            border-color: var(--accent);
         }
 
         .project-title {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             color: #ffffff;
             margin-bottom: 10px;
         }
 
         .tech-stack {
-            font-family: monospace;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
             color: var(--text-muted);
             margin-bottom: 15px;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
+            display: block;
         }
 
         .ai-thought-process {
             background-color: var(--ai-bg);
             border-left: 4px solid var(--accent);
-            padding: 15px;
-            margin-top: 20px;
+            padding: 20px;
+            margin-top: 25px;
             border-radius: 0 5px 5px 0;
         }
 
         .ai-thought-process h4 {
             color: #ffffff;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
             display: flex;
             align-items: center;
+            font-size: 1.1rem;
         }
 
         .ai-thought-process h4::before {
             content: "🧠";
-            margin-right: 8px;
+            margin-right: 10px;
+        }
+
+        .ai-thought-process p {
+            font-size: 0.95rem;
+            color: var(--text-main);
         }
 
         .btn {
             display: inline-block;
-            background-color: var(--accent);
-            color: #ffffff;
-            padding: 8px 16px;
+            background-color: transparent;
+            color: var(--accent);
+            padding: 8px 20px;
             text-decoration: none;
             border-radius: 5px;
-            margin-top: 15px;
-            font-weight: bold;
+            margin-top: 20px;
+            font-weight: 600;
+            border: 1px solid var(--accent);
+            transition: 0.3s;
         }
 
         .btn:hover {
-            background-color: var(--accent-hover);
+            background-color: var(--accent);
+            color: #ffffff;
         }
 
         ul {
             margin-left: 20px;
             margin-bottom: 15px;
+            color: var(--text-main);
+        }
+
+        li {
+            margin-bottom: 5px;
         }
 
         footer {
             text-align: center;
-            padding: 40px;
+            padding: 60px;
             border-top: 1px solid var(--border);
             color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        strong {
+            color: #ffffff;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>[Tên của Bạn]</h1>
-        <p>Lead OpenSCAD Engineer | Parametric & Computational Designer</p>
+        <h1>DIEP MINH ANH TIEN</h1>
+        <p>Computational Design Architect | AI Reasoning Specialist | Mechatronics Engineer</p>
         <div class="contact-links">
-            <a href="mailto:your.email@gmail.com">Email</a>
-            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+            <a href="mailto:diepminhanhtien@gmail.com">Email</a>
+            <a href="https://github.com/dieptien043" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/tiendma/" target="_blank">LinkedIn</a>
         </div>
     </header>
 
@@ -187,74 +210,74 @@
         
         <!-- SUMMARY SECTION -->
         <section>
-            <h2>Summary</h2>
-            <p>Kỹ sư thiết kế với chuyên môn sâu về <strong>OpenSCAD và Parametric Design</strong>. Chuyên dẫn dắt các dự án end-to-end, từ khâu thu thập yêu cầu đến xuất file chuẩn (STL/OFF/DXF) cho in 3D và CNC. Đặc biệt chú trọng vào kiến trúc mã nguồn sạch (clean code), kỹ thuật Constructive Solid Geometry (CSG), và <strong>minh bạch hóa tư duy kỹ thuật để hỗ trợ quá trình huấn luyện AI (AI Learning)</strong>.</p>
+            <h2>Professional Summary</h2>
+            <p>Strategic Mechatronics Engineer (HUST) with a proven track record in <strong>Embedded Systems (Hitachi Astemo)</strong> and <strong>Precision Engineering (CADDI)</strong>. I specialize in <strong>Computational Design</strong>, bridging the gap between mechanical hardware precision and algorithmic script logic. Currently serving as an <strong>Instructional AI Expert</strong>, I excel at deconstructing complex technical workflows into transparent, logically sequenced "Gold Standard" exemplars to advance AI reasoning and parametric modeling.</p>
         </section>
 
         <!-- SKILLS SECTION -->
         <section>
-            <h2>Core Competencies</h2>
+            <h2>Transferable Competencies</h2>
             <div class="skills-grid">
-                <span class="skill-tag">OpenSCAD (Expert)</span>
-                <span class="skill-tag">Parametric Design</span>
-                <span class="skill-tag">2D-to-3D Extrusion</span>
+                <span class="skill-tag">Computational Design (OpenSCAD)</span>
+                <span class="skill-tag">Embedded Logic (C/C++)</span>
+                <span class="skill-tag">Parametric Modeling</span>
                 <span class="skill-tag">Constructive Solid Geometry (CSG)</span>
-                <span class="skill-tag">DFM (In 3D / CNC)</span>
-                <span class="skill-tag">Algorithmic Modeling</span>
+                <span class="skill-tag">Manufacturing Process (CNC/Sheet Metal)</span>
+                <span class="skill-tag">Instructional Logic Validation</span>
                 <span class="skill-tag">Technical Documentation</span>
             </div>
         </section>
 
         <!-- PROJECTS SECTION -->
         <section>
-            <h2>Featured Projects</h2>
+            <h2>Featured Computational Projects</h2>
 
             <!-- Project 1 -->
             <div class="project-card">
                 <h3 class="project-title">1. Parametric NEMA Motor Mount with Belt Tensioner</h3>
-                <div class="tech-stack">OpenSCAD | 2D Offset Optimization | Data Look-up Logic</div>
-                <p>Hệ thống ngàm giữ động cơ bước (NEMA 14, 17, 23) điều khiển hoàn toàn bằng tham số, tích hợp rãnh trượt động học để điều chỉnh độ căng dây đai.</p>
+                <span class="tech-stack">Algorithm: Hull-based Slotted Holes | Logic: Static Array Look-up</span>
+                <p>Designed a lead-level parametric motor bracket for NEMA 14, 17, and 23 motors, featuring automated geometry scaling and dynamic belt tensioning slots.</p>
                 <ul>
-                    <li>Sử dụng logic điều kiện để tra cứu tự động kích thước chuẩn của các dòng động cơ NEMA.</li>
-                    <li>Tối ưu hóa hình học 2D trước khi đùn khối 3D (Extrusion) để tăng tốc độ render máy tính.</li>
+                    <li>Integrated lookup tables to automatically fetch standard NEMA dimensions based on a single parameter.</li>
+                    <li>Optimized 2D profile rendering before 3D extrusion to ensure high-performance script execution.</li>
                 </ul>
                 <div class="ai-thought-process">
-                    <h4>Professional Thought Process & Trade-offs (AI Learning)</h4>
-                    <p><strong>Design Decision:</strong> Thay vì dùng hàm <code>scale()</code> trên một hình tròn 3D để tạo rãnh trượt (khiến trục bị méo và kẹt ốc), tôi chọn sử dụng hàm <code>hull()</code> kết nối 2 hình tròn 2D. <br><br><strong>Performance Trade-off:</strong> Việc thay thế xử lý 3D Minkowski bằng kỹ thuật <code>2D offset -> linear_extrude</code> đã giúp giảm thời gian render (compute time) từ hơn 10 giây xuống dưới 0.1 giây, cho phép "iterate rapidly" đúng chuẩn kỹ thuật phần mềm.</p>
+                    <h4>Engineering Reasoning (AI Training Exemplar)</h4>
+                    <p><strong>Design Decision:</strong> Utilized the <code>hull()</code> function on 2D circles rather than 3D <code>scale()</code> for tensioner slots. <br><strong>Rationale:</strong> Scaling distorts arc geometry, leading to screw binding. The <code>hull()</code> approach preserves exact radii for mechanical tolerances. <br><strong>Performance Trade-off:</strong> Employed <code>2D offset</code> rounding instead of 3D <code>minkowski</code>, reducing render time from ~10s to <0.1s—demonstrating a deep understanding of computational efficiency.</p>
                 </div>
-                <a href="link-github-cua-ban" class="btn" target="_blank">View Source Code</a>
+                <a href="#" class="btn">View Source Code</a>
             </div>
 
             <!-- Project 2 -->
             <div class="project-card">
-                <h3 class="project-title">2. Modular Snap-Fit IoT Enclosure</h3>
-                <div class="tech-stack">OpenSCAD | Reusable Modules | Dynamic Arrays | Tolerance Calcs</div>
-                <p>Vỏ hộp bảo vệ mạch điện tử IoT lắp ráp bằng ngàm âm dương (Snap-fit) không cần ốc vít. Lưới tản nhiệt sinh tự động bằng thuật toán dựa trên kích thước PCB.</p>
+                <h3 class="project-title">2. Material-Aware Snap-Fit IoT Enclosure</h3>
+                <span class="tech-stack">Algorithm: Dynamic Snap-fit Logic | Patterns: Iterative Ventilation</span>
+                <p>Modular enclosure for IoT boards (ESP32/RPi) using screwless snap-fit joints and algorithmic ventilation grille generation.</p>
                 <ul>
-                    <li>Cấu trúc script bằng các <strong>Reusable Modules</strong> (ngàm, lưới tản nhiệt).</li>
-                    <li>Vòng lặp <code>for</code> lồng nhau để phân bổ lỗ thông gió theo diện tích động <code>floor()</code>.</li>
+                    <li>Created reusable modules for PCB standoffs and snap joints with built-in tolerance controls.</li>
+                    <li>Implemented <code>floor()</code> math functions to distribute cooling holes dynamically based on surface area.</li>
                 </ul>
                 <div class="ai-thought-process">
-                    <h4>Professional Thought Process & Trade-offs (AI Learning)</h4>
-                    <p><strong>Material Constraints Logic:</strong> Tôi đã nhúng tư duy vật liệu học vào thuật toán biến số. Nhựa PLA cứng và giòn hơn PETG. Nếu người dùng chọn <code>material="PLA"</code>, script tự động kéo dài ngàm Snap-fit thêm 30% để tăng đòn bẩy, làm giảm moment uốn tại gốc ngàm và ngăn ngừa nứt gãy trong quá trình lắp ráp thực tế.</p>
+                    <h4>Instructional Logic & Trade-offs</h4>
+                    <p><strong>Material Property Logic:</strong> Integrated an <code>if/else</code> material selector. Since PLA is stiffer/more brittle than PETG, the script automatically increases the lever arm length of the snap-fit when <code>material="PLA"</code> to reduce bending stress and prevent mechanical failure during assembly.</p>
                 </div>
-                <a href="link-github-cua-ban" class="btn" target="_blank">View Source Code</a>
+                <a href="#" class="btn">View Source Code</a>
             </div>
 
             <!-- Project 3 -->
             <div class="project-card">
-                <h3 class="project-title">3. Generative Truss Quadcopter Frame</h3>
-                <div class="tech-stack">OpenSCAD | Trigonometry | 2D Masking | Advanced CSG</div>
-                <p>Khung Drone 4 cánh với cấu trúc giảm trọng lượng dạng lưới tổ ong (Hexagon Truss). Toàn bộ kích thước khung tự động nội suy từ kích thước cánh quạt.</p>
+                <h3 class="project-title">3. Generative Truss Drone Frame</h3>
+                <span class="tech-stack">Math: Trigonometric Arm Extension | CSG: 2D Masking</span>
+                <p>A high-performance quadcopter frame where all dimensions are mathematically derived from the propeller radius to prevent blade collision.</p>
                 <ul>
-                    <li>Áp dụng Toán học lượng giác để tự động tính toán độ dài cánh tay đòn, đảm bảo cánh quạt không bao giờ va chạm nhau.</li>
-                    <li>File có khả năng xuất linh hoạt: STL (cho in 3D) hoặc DXF (cắt CNC carbon).</li>
+                    <li>Leveraged trigonometric functions (sin/cos) to calculate motor-to-motor distance and center hub clearance.</li>
+                    <li>Developed a hexagonal truss mask to optimize strength-to-weight ratio for manufacturing.</li>
                 </ul>
                 <div class="ai-thought-process">
-                    <h4>Professional Thought Process & Trade-offs (AI Learning)</h4>
-                    <p><strong>Workflow Optimization:</strong> Phép trừ khối (Difference) lưới tổ ong trên môi trường 3D tiêu tốn tài nguyên khổng lồ và dễ làm tràn bộ nhớ (crash RAM). <strong>Giải pháp:</strong> Tôi thực hiện toàn bộ phép đục lỗ bằng thuật toán <strong>2D Masking & Intersection</strong>. Chỉ sau khi mặt cắt 2D hoàn hảo mới tiến hành đùn khối 3D (Extrude). Quy trình này thể hiện rõ sự cân nhắc giữa độ phức tạp hình học và hiệu năng tính toán.</p>
+                    <h4>Computational Strategy</h4>
+                    <p><strong>Masking Optimization:</strong> Complex difference operations on 3D trusses often cause memory crashes. I solved this by implementing a <strong>2D Masking & Intersection</strong> workflow. The intricate weight-saving holes are processed in 2D space before a single final extrusion, ensuring a zero-error workflow for downstream STL/DXF export.</p>
                 </div>
-                <a href="link-github-cua-ban" class="btn" target="_blank">View Source Code</a>
+                <a href="#" class="btn">View Source Code</a>
             </div>
 
         </section>
@@ -262,7 +285,7 @@
     </div>
 
     <footer>
-        <p>Built with OpenSCAD logic & clean HTML/CSS. © 2026 [Tên của Bạn].</p>
+        <p>Expertly crafted for AI Training & Precision Engineering. © 2026 Diep Minh Anh Tien.</p>
     </footer>
 
 </body>
