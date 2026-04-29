@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diep Minh Anh Tien | Computational Design & AI Reasoning Portfolio</title>
+    <title>Diep Minh Anh Tien | Computational Design Portfolio</title>
     <style>
         :root {
             --bg-color: #0d1117;
@@ -153,17 +153,23 @@
             color: var(--text-main);
         }
 
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
         .btn {
             display: inline-block;
             background-color: transparent;
             color: var(--accent);
-            padding: 8px 20px;
+            padding: 8px 16px;
             text-decoration: none;
             border-radius: 5px;
-            margin-top: 20px;
             font-weight: 600;
             border: 1px solid var(--accent);
             transition: 0.3s;
+            font-size: 0.9rem;
         }
 
         .btn:hover {
@@ -171,14 +177,15 @@
             color: #ffffff;
         }
 
-        ul {
-            margin-left: 20px;
-            margin-bottom: 15px;
-            color: var(--text-main);
+        .btn-secondary {
+            border-color: var(--border);
+            color: var(--text-muted);
         }
 
-        li {
-            margin-bottom: 5px;
+        .btn-secondary:hover {
+            border-color: var(--text-main);
+            color: var(--text-main);
+            background-color: transparent;
         }
 
         footer {
@@ -189,9 +196,7 @@
             font-size: 0.9rem;
         }
 
-        strong {
-            color: #ffffff;
-        }
+        strong { color: #ffffff; }
     </style>
 </head>
 <body>
@@ -211,7 +216,7 @@
         <!-- SUMMARY SECTION -->
         <section>
             <h2>Professional Summary</h2>
-            <p>Strategic Mechatronics Engineer (HUST) with a proven track record in <strong>Embedded Systems (Hitachi Astemo)</strong> and <strong>Precision Engineering (CADDI)</strong>. I specialize in <strong>Computational Design</strong>, bridging the gap between mechanical hardware precision and algorithmic script logic. Currently serving as an <strong>Instructional AI Expert</strong>, I excel at deconstructing complex technical workflows into transparent, logically sequenced "Gold Standard" exemplars to advance AI reasoning and parametric modeling.</p>
+            <p>Strategic Mechatronics Engineer (HUST) with high-rigor experience in <strong>Embedded Systems (Hitachi Astemo)</strong> and <strong>Precision Engineering (CADDI)</strong>. I specialize in <strong>Computational Design</strong>, bridging mechanical hardware precision with algorithmic script logic. As an <strong>Instructional AI Expert</strong>, I excel at deconstructing complex technical workflows into transparent "Gold Standard" exemplars to advance AI reasoning in parametric modeling.</p>
         </section>
 
         <!-- SKILLS SECTION -->
@@ -219,65 +224,61 @@
             <h2>Transferable Competencies</h2>
             <div class="skills-grid">
                 <span class="skill-tag">Computational Design (OpenSCAD)</span>
-                <span class="skill-tag">Embedded Logic (C/C++)</span>
-                <span class="skill-tag">Parametric Modeling</span>
-                <span class="skill-tag">Constructive Solid Geometry (CSG)</span>
-                <span class="skill-tag">Manufacturing Process (CNC/Sheet Metal)</span>
-                <span class="skill-tag">Instructional Logic Validation</span>
-                <span class="skill-tag">Technical Documentation</span>
+                <span class="skill-tag">Embedded C/C++</span>
+                <span class="skill-tag">Parametric Architecture</span>
+                <span class="skill-tag">CSG (Constructive Solid Geometry)</span>
+                <span class="skill-tag">Digital Manufacturing (CNC/Laser)</span>
+                <span class="skill-tag">Logic Documentation</span>
             </div>
         </section>
 
         <!-- PROJECTS SECTION -->
         <section>
-            <h2>Featured Computational Projects</h2>
+            <h2>Featured Projects</h2>
 
             <!-- Project 1 -->
             <div class="project-card">
-                <h3 class="project-title">1. Parametric NEMA Motor Mount with Belt Tensioner</h3>
-                <span class="tech-stack">Algorithm: Hull-based Slotted Holes | Logic: Static Array Look-up</span>
-                <p>Designed a lead-level parametric motor bracket for NEMA 14, 17, and 23 motors, featuring automated geometry scaling and dynamic belt tensioning slots.</p>
-                <ul>
-                    <li>Integrated lookup tables to automatically fetch standard NEMA dimensions based on a single parameter.</li>
-                    <li>Optimized 2D profile rendering before 3D extrusion to ensure high-performance script execution.</li>
-                </ul>
+                <h3 class="project-title">1. Parametric NEMA Motor Mount</h3>
+                <span class="tech-stack">File: nema_mount.scad | Logic: Hull-based Hull Slotted Holes</span>
+                <p>A universal industrial motor bracket where geometry adapts to standard NEMA sizes and dynamic belt tensioning requirements.</p>
                 <div class="ai-thought-process">
-                    <h4>Engineering Reasoning (AI Training Exemplar)</h4>
-                    <p><strong>Design Decision:</strong> Utilized the <code>hull()</code> function on 2D circles rather than 3D <code>scale()</code> for tensioner slots. <br><strong>Rationale:</strong> Scaling distorts arc geometry, leading to screw binding. The <code>hull()</code> approach preserves exact radii for mechanical tolerances. <br><strong>Performance Trade-off:</strong> Employed <code>2D offset</code> rounding instead of 3D <code>minkowski</code>, reducing render time from ~10s to <0.1s—demonstrating a deep understanding of computational efficiency.</p>
+                    <h4>Engineering Reasoning</h4>
+                    <p>Optimized rendering by replacing 3D Minkowski operations with <strong>2D offsets</strong>, reducing compute time by 99% (from 10s to <0.1s). This ensures a rapid iteration workflow for manufacturing.</p>
                 </div>
-                <a href="#" class="btn">View Source Code</a>
+                <div class="btn-group">
+                    <a href="nema_mount.scad" class="btn" target="_blank">View .SCAD File</a>
+                    <a href="README_Project1.md" class="btn btn-secondary" target="_blank">Read Documentation</a>
+                </div>
             </div>
 
             <!-- Project 2 -->
             <div class="project-card">
-                <h3 class="project-title">2. Material-Aware Snap-Fit IoT Enclosure</h3>
-                <span class="tech-stack">Algorithm: Dynamic Snap-fit Logic | Patterns: Iterative Ventilation</span>
-                <p>Modular enclosure for IoT boards (ESP32/RPi) using screwless snap-fit joints and algorithmic ventilation grille generation.</p>
-                <ul>
-                    <li>Created reusable modules for PCB standoffs and snap joints with built-in tolerance controls.</li>
-                    <li>Implemented <code>floor()</code> math functions to distribute cooling holes dynamically based on surface area.</li>
-                </ul>
+                <h3 class="project-title">2. Modular Snap-Fit IoT Enclosure</h3>
+                <span class="tech-stack">File: iot_enclosure.scad | Logic: Material-Aware Dynamics</span>
+                <p>Screwless enclosure with algorithmic ventilation grille generation, designed for multiple materials (PLA/PETG).</p>
                 <div class="ai-thought-process">
-                    <h4>Instructional Logic & Trade-offs</h4>
-                    <p><strong>Material Property Logic:</strong> Integrated an <code>if/else</code> material selector. Since PLA is stiffer/more brittle than PETG, the script automatically increases the lever arm length of the snap-fit when <code>material="PLA"</code> to reduce bending stress and prevent mechanical failure during assembly.</p>
+                    <h4>AI Learning Value</h4>
+                    <p>The script includes a <strong>Material Logic layer</strong>: it automatically extends snap-fit levers when PLA is selected to compensate for its high modulus of elasticity, preventing assembly fractures.</p>
                 </div>
-                <a href="#" class="btn">View Source Code</a>
+                <div class="btn-group">
+                    <a href="iot_enclosure.scad" class="btn" target="_blank">View .SCAD File</a>
+                    <a href="README_Project2.md" class="btn btn-secondary" target="_blank">Read Documentation</a>
+                </div>
             </div>
 
             <!-- Project 3 -->
             <div class="project-card">
                 <h3 class="project-title">3. Generative Truss Drone Frame</h3>
-                <span class="tech-stack">Math: Trigonometric Arm Extension | CSG: 2D Masking</span>
-                <p>A high-performance quadcopter frame where all dimensions are mathematically derived from the propeller radius to prevent blade collision.</p>
-                <ul>
-                    <li>Leveraged trigonometric functions (sin/cos) to calculate motor-to-motor distance and center hub clearance.</li>
-                    <li>Developed a hexagonal truss mask to optimize strength-to-weight ratio for manufacturing.</li>
-                </ul>
+                <span class="tech-stack">File: drone_frame.scad | Math: Trigonometric Modeling</span>
+                <p>A high-performance quadcopter frame derived from propeller radius formulas to ensure zero-collision geometry.</p>
                 <div class="ai-thought-process">
                     <h4>Computational Strategy</h4>
-                    <p><strong>Masking Optimization:</strong> Complex difference operations on 3D trusses often cause memory crashes. I solved this by implementing a <strong>2D Masking & Intersection</strong> workflow. The intricate weight-saving holes are processed in 2D space before a single final extrusion, ensuring a zero-error workflow for downstream STL/DXF export.</p>
+                    <p>Demonstrates mastery of <strong>2D Masking & Intersection</strong> to create complex truss patterns without overloading the CSG engine, ensuring zero-error export for CNC production.</p>
                 </div>
-                <a href="#" class="btn">View Source Code</a>
+                <div class="btn-group">
+                    <a href="drone_frame.scad" class="btn" target="_blank">View .SCAD File</a>
+                    <a href="README_Project3.md" class="btn btn-secondary" target="_blank">Read Documentation</a>
+                </div>
             </div>
 
         </section>
@@ -285,7 +286,7 @@
     </div>
 
     <footer>
-        <p>Expertly crafted for AI Training & Precision Engineering. © 2026 Diep Minh Anh Tien.</p>
+        <p>Built for AI Tutoring & Engineering Excellence. © 2026 Diep Minh Anh Tien.</p>
     </footer>
 
 </body>
